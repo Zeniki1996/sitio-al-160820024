@@ -1,8 +1,252 @@
+@charset "UTF-8";
 /*begin-commonstyles library*//*!
  * froala_editor v4.0.6 (https://www.froala.com/wysiwyg-editor)
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2021 Froala Labs
  */
+
+ header{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.155);
+}
+
+.image-1inicio{
+  display: inline-flex;
+  width: 10%;
+  max-width: 40px;
+  margin-left: 6%;
+
+}
+.logoimg{
+  width: 100%;
+  
+}
+
+/*LENGUAJE*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.Lenguaje {
+  display: inline-block;
+  margin-right: 10px;
+  
+}
+
+.wrap-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.7em;
+  color: #333;
+}
+
+/* Estilo por defecto (bandera de España) */
+.wrap {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("images/Bandera-ingles.png");
+  background-size: cover;
+  height: 0em;
+  width: 2em;
+  border-radius: 7em;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+/* Estilo para la bandera del Reino Unido */
+.wrap.english {
+  background-image: url("images/bandera-espanol.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Cambio de la cara neutra */
+.toggle {
+  overflow: hidden;
+  background: #2c1919aa;
+  height: 0.9em;
+  width: 0.9em;
+  border-radius: 100%;
+  margin: -8px;
+  position: relative;
+}
+
+.active .toggle:before, .active .toggle:after {
+  animation: slidetoboring 0.4s linear;
+}
+
+.toggle:before {
+  left: 2%;
+}
+
+.toggle:after {
+  right: 2%;
+}
+
+.english .toggle {
+  margin-left: 0.5em;
+}
+
+.english .toggle:before, .english .toggle:after {
+  animation: slidetotoEnglish 0.4s linear;
+}
+
+
+
+@keyframes slidetoEnglish {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  51% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slidetoboring {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  51% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+/*Fin LENGUAJE*/
+ 
+/*Iconos redes sociales*/
+.container-bar{
+	width: 100%;
+	max-width: 40px;
+	position: fixed;
+	left: 0;
+	top: 30%;
+  z-index: 1000;/* Un valor alto asegura que esté por encima de otros elementos */
+}
+.container-bar a{
+	display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+	transition: all 500ms ease;
+	color: #fff;
+}
+.container-bar a:hover{
+	background: #858585a2;
+}
+
+.container-bar .fa-facebook{
+  background-color: #0a04047a;
+  background-image: url("images/facebookicon.png");
+  background-size: 25px 25px; /* Cambia estos valores según el tamaño que desees */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen */
+	border-radius: 0px 5px 0px 0px;
+}
+.container-bar .fa-youtube{
+	/*background: #e52a23;*/
+  background-color: #0a04047a;
+  background-image: url("images/youtubeicon.png");
+  margin-top: 0.1px;
+  background-size: 25px 25px; /* Cambia estos valores según el tamaño que desees */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen */
+}
+.container-bar .fa-twitter{
+	background-color: #0a04047a;
+  background-image: url("images/whatsappicon.png");
+  margin-top: 0.6px;
+  background-size: 25px 25px; /* Cambia estos valores según el tamaño que desees */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen */
+}
+.container-bar .fa-github{
+	background-color: #0a04047a;
+  background-image: url("images/instagramicon.png");
+  margin-top: 0.7px;
+  background-size: 25px 25px; /* Cambia estos valores según el tamaño que desees */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen */
+}
+
+
+
+.container-bar #title{
+	position: absolute;
+	background: #1c1c1c;
+	padding: 0px 8px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 3px;
+	font-size: 15px;
+	top:12px; left: 0px;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+}
+.container-bar a:hover #title{
+	opacity: 1;
+	visibility: visible;
+	left: 64px;
+}
+.container-bar #title:after{
+	position: absolute;
+	content: '';
+	border-left: 7px solid transparent;
+	border-right: 6px solid #1c1c1c;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	right: 100%;
+	top: 8px;
+}
+#btn-social{
+	display: none;
+}
+.fa-play{
+	cursor: pointer;
+	transition: all 0.4s;
+	font-size: 12px;
+	margin-bottom: 5px;
+	display: inline-block;
+	transform: rotate(180deg);
+	color: #49b0e6;
+}
+#btn-social:checked ~ .fa-play{
+	transform: rotate(0deg);
+}
+.icon-social{
+	transition: all 0.4s;
+	transform: translateX(0%);
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+}
+#btn-social:checked ~ .icon-social{
+	transform: translateX(-100%);
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.0);
+}
+/*Fon Redes sociales*/
 
 .fr-clearfix::after {
   clear: both;
@@ -95,7 +339,7 @@
     white-space: pre-wrap;
     word-wrap: break-word;
     overflow: visible; }
-/*  .fr-view[dir="rtl"] blockquote {
+   .fr-view[dir="rtl"] blockquote {
     border-left: none;
     border-right: solid 2px #5E35B1;
     margin-right: 0;
@@ -115,7 +359,7 @@
       color: #00BCD4; }
       .fr-view blockquote blockquote blockquote {
         border-color: #43A047;
-        color: #43A047; } */
+        color: #43A047; } 
   .fr-view span.fr-emoticon {
     font-weight: normal;
     font-family: "Apple Color Emoji","Segoe UI Emoji","NotoColorEmoji","Segoe UI Symbol","Android Emoji","EmojiSymbols";
@@ -164,7 +408,8 @@
       margin: 10px auto;
       display: block;
       float: none;
-      vertical-align: top; }
+      vertical-align: top; 
+    }
       .fr-view img.fr-dib.fr-fil {
         margin-left: 0;
         text-align: left; }
@@ -361,7 +606,7 @@ span.fr-img-caption.fr-view {
       margin: 5px 0 5px 5px;
       max-width: calc(100% - 5px); }
 /*end-commonstyles library*/
-@charset "UTF-8";
+
 .u-hidden-block {
   visibility: hidden!important;
 }
@@ -389,7 +634,7 @@ menu,
 nav,
 section,
 summary {
-  display: block;
+  display: flex;
 }
 audio,
 canvas,
@@ -19439,30 +19684,37 @@ a.pswp__share--download:hover {
     opacity: 1;
   }
 }
+
 @keyframes customAnimationIn {
   from {
     transform-origin: center center;
-    transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-custom_in-translate_y), 0) scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale)) rotate3d(0, 0, 1, var(--animation-custom_in-rotate));
-    opacity: var(--animation-custom_in-opacity);
+    transform: translate3d(var(--animation-custom-in-translate-x), var(--animation-custom-in-translate-y), 0)
+               scale3d(var(--animation-custom-in-scale), var(--animation-custom-in-scale), var(--animation-custom-in-scale))
+               rotate3d(0, 0, 1, var(--animation-custom-in-rotate));
+    opacity: var(--animation-custom-in-opacity);
   }
   to {
     transform-origin: center center;
-    transform: translate3d(-50% !important, -50% !important, 0);
+    transform: translate3d(-50%, -50%, 0); /* Eliminado !important */
     opacity: 1;
   }
 }
+
 @keyframes customAnimationOut {
   from {
     transform-origin: center center;
-    transform: translate3d(-50% !important, -50% !important, 0);
+    transform: translate3d(-50%, -50%, 0); /* Eliminado !important */
     opacity: 1;
   }
   to {
     transform-origin: center center;
-    transform: translate3d(var(--animation-custom_in-translate_x), var(--animation-custom_in-translate_y), 0) scale3d(var(--animation-custom_in-scale), var(--animation-custom_in-scale), var(--animation-custom_in-scale)) rotate3d(0, 0, 1, var(--animation-custom_in-rotate));
-    opacity: var(--animation-custom_in-opacity);
+    transform: translate3d(var(--animation-custom-out-translate-x), var(--animation-custom-out-translate-y), 0)
+               scale3d(var(--animation-custom-out-scale), var(--animation-custom-out-scale), var(--animation-custom-out-scale))
+               rotate3d(0, 0, 1, var(--animation-custom-out-rotate));
+    opacity: var(--animation-custom-out-opacity);
   }
 }
+
 .customAnimationIn {
   animation-name: customAnimationIn;
 }
@@ -38077,7 +38329,6 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 
-
 .u-header .u-nav-1 {
   font-size: 1rem;
   letter-spacing: 0px;
@@ -38098,12 +38349,10 @@ a.u-link.u-text-hover-grey-90:hover {
     width: 35px;
   }
 
-  
-
   .u-header .u-image-2 {
     width: 376px;
     height: 34px;
-    margin-top: -35px;
+    /*margin-top: -35px;
     /*margin-left: calc(((100% - 940px) / 2) + 382px);*/
   }
 }
