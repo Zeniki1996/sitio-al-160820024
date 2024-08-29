@@ -1,4 +1,128 @@
+header{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.155);
+}
 
+.image-1inicio{
+  display: inline-flex;
+  width: 10%;
+  max-width: 40px;
+  margin-left: 6%;
+
+}
+.logoimg{
+  width: 100%;
+  
+}
+
+/*LENGUAJE*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.Lenguaje {
+  display: inline-block;
+  margin-right: 10px;
+  
+}
+
+.wrap-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.7em;
+  color: #333;
+}
+
+/* Estilo por defecto (bandera de España) */
+.wrap {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("images/Bandera-ingles.png");
+  background-size: cover;
+  height: 0em;
+  width: 2em;
+  border-radius: 7em;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+/* Estilo para la bandera del Reino Unido */
+.wrap.english {
+  background-image: url("images/bandera-espanol.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Cambio de la cara neutra */
+.toggle {
+  overflow: hidden;
+  background: #2c1919aa;
+  height: 0.9em;
+  width: 0.9em;
+  border-radius: 100%;
+  margin: -8px;
+  position: relative;
+}
+
+.active .toggle:before, .active .toggle:after {
+  animation: slidetoboring 0.4s linear;
+}
+
+.toggle:before {
+  left: 2%;
+}
+
+.toggle:after {
+  right: 2%;
+}
+
+.english .toggle {
+  margin-left: 0.5em;
+}
+
+.english .toggle:before, .english .toggle:after {
+  animation: slidetotoEnglish 0.4s linear;
+}
+
+
+
+@keyframes slidetoEnglish {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  51% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slidetoboring {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  51% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+/*Fin LENGUAJE*/
  
  .u-section-1 {
   background:white;
@@ -7,9 +131,10 @@
 }
 .imgredes{
   width: 3%;
-  
+
 
 }
+
 
 .u-section-1 .embed-responsive-1 {
   position: absolute;
@@ -25,14 +150,14 @@
 	box-sizing: border-box;
 	font-family: sans-serif;
 }
+/*Iconos redes sociales*/
 .container-bar{
 	width: 100%;
 	max-width: 40px;
 	position: fixed;
 	left: 0;
 	top: 30%;
- 
-  z-index: 1000; /* Un valor alto asegura que esté por encima de otros elementos */
+  z-index: 1000;/* Un valor alto asegura que esté por encima de otros elementos */
 }
 .container-bar a{
 	display: block;
@@ -47,12 +172,11 @@
 	color: #fff;
 }
 .container-bar a:hover{
-	background: #1c1c1c;
+	background: #858585a2;
 }
 
 .container-bar .fa-facebook{
-  
-	background: #3b5998;
+  background-color: #0a04047a;
   background-image: url("images/facebookicon.png");
   background-size: 25px 25px; /* Cambia estos valores según el tamaño que desees */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -60,26 +184,32 @@
 	border-radius: 0px 5px 0px 0px;
 }
 .container-bar .fa-youtube{
-	background: #e52a23;
+	/*background: #e52a23;*/
+  background-color: #0a04047a;
   background-image: url("images/youtubeicon.png");
+  margin-top: 0.1px;
   background-size: 25px 25px; /* Cambia estos valores según el tamaño que desees */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-position: center; /* Centra la imagen */
 }
 .container-bar .fa-twitter{
-	background: #25D366;
+	background-color: #0a04047a;
   background-image: url("images/whatsappicon.png");
+  margin-top: 0.6px;
   background-size: 25px 25px; /* Cambia estos valores según el tamaño que desees */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-position: center; /* Centra la imagen */
 }
 .container-bar .fa-github{
-	background: #984075;
+	background-color: #0a04047a;
   background-image: url("images/instagramicon.png");
+  margin-top: 0.7px;
   background-size: 25px 25px; /* Cambia estos valores según el tamaño que desees */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-position: center; /* Centra la imagen */
 }
+
+
 
 .container-bar #title{
 	position: absolute;
@@ -164,9 +294,11 @@
 }
 
 .u-section-2 .u-text-1 {
+  text-align: center;
+  vertical-align: middle;
   background-image: none;
   font-family: Marcellus;
-  margin: 131px 62px 0 27px;
+  margin: auto;
 }
 
 .u-section-2 .u-text-2 {
@@ -187,9 +319,189 @@
 
 .u-section-2 .u-image-1 {
   min-height: 431px;
-  background-image: url("images/plantasdepitahaya-02.png");
+  background-image: url("images/plantasdepitahaya-02.jpg");
   background-position: 50% 50%;
 }
+.u-section-2 .u-image-10 {
+  min-height: 431px;
+  background-image: url("images/Pitahalla-agua.jpg");
+  background-position: 50% 50%;
+}
+
+/*Animacion secion fruta redonda */
+
+
+.Infografiafruta {
+  font-family: Arial, sans-serif;
+  background-image: url("images/fondopita.png");
+  background-size: 100%;
+ /* background-repeat: no-repeat;*/
+  background-position: center;
+  max-height: 1800px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.section-title h1 {
+  font-size: 2.5em;
+  color: #ffd700;
+}
+
+.section-title p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #ffd700;
+}
+
+.image-container {
+  position: relative;
+  margin-top: 30px;
+}
+
+.main-image {
+  width: 60%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.info-block {
+  position: absolute;
+  width: 180px;
+  padding: 5px;
+  text-align: left;
+}
+
+.info-block h2 {
+  font-size: 1.1em;
+  margin-bottom: 4px;
+  color: #ffd700;
+}
+
+.info-block p {
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+
+.top-left {
+  top: 10%;
+  left: 0%;
+}
+
+.top-right {
+  top: 10%;
+  right: 0%;
+}
+
+.bottom-right {
+  bottom: 10%;
+  right: 0%;
+}
+
+.bottom-left {
+  bottom: 10%;
+  left: 0%;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .Infografiafruta {
+    margin-top: -20%;
+    margin-bottom: -20%;
+  }
+  .info-block {
+    width: 150px;
+    font-size: 0.7em;
+	  margin-top:-10%;
+  }
+
+  .section-title h1 {
+    font-size: 1.8em;
+  }
+
+  .main-image {
+    max-width: 40%;
+  }
+
+  .info-block h2 {
+    font-size: 1em;
+  }
+
+  .info-block p {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-block {
+    width: 80px;
+    font-size: 0.6em;
+	  margin-top:-60px;
+  }
+  .Infografiafruta {
+    margin-top: -10%;
+    margin-bottom: -10%;
+  }
+
+  .section-title h1 {
+    font-size: 1.5em;
+  }
+
+  .main-image {
+    max-width: 60%;
+  }
+
+  .info-block h2 {
+    font-size: 0.9em;
+  }
+
+  .info-block p {
+    font-size: 0.7em;
+  }
+}
+@media (max-width: 430px) {
+  .info-block {
+    width: 80px;
+    font-size: 0.6em;
+	  margin-top:-60px;
+  }
+  .Infografiafruta {
+    margin-top: -70%;
+    margin-bottom: -70%;
+  }
+
+  .section-title h1 {
+    font-size: 1.5em;
+  }
+
+  .main-image {
+    max-width: 60%;
+  }
+
+  .info-block h2 {
+    font-size: 0.9em;
+  }
+
+  .info-block p {
+    font-size: 0.7em;
+  }
+}
+
+
+
+/*RESTO DEL CÓDIGO*/
 
 .u-section-2 .u-container-layout-2 {
   padding: 30px 60px;
@@ -259,7 +571,7 @@
     min-height: 257px;
   }
 } .u-section-3 {
-  background-image: url("images/_MG_19221.JPG");
+  background-image: url("images/conjunto-pitehalla.jpg");
   background-position: 50% 50%;
 }
 
@@ -415,7 +727,7 @@
     margin-right: 89px;
   }
 } .u-section-5 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("images/plantasdepitahaya-04.png");
+  background-image: linear-gradient(0deg, rgba(0,0,1,0.8), rgba(0,0,0,0.3)), url("images/plantasdepitahaya-04.png");
   background-position: 50% 50%;
 }
 

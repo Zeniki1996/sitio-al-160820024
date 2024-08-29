@@ -360,7 +360,8 @@ span.fr-img-caption.fr-view {
       float: right;
       margin: 5px 0 5px 5px;
       max-width: calc(100% - 5px); }
-/*end-commonstyles library*/@charset "UTF-8";
+/*end-commonstyles library*/
+@charset "UTF-8";
 .u-hidden-block {
   visibility: hidden!important;
 }
@@ -20854,7 +20855,7 @@ a.u-button-style.u-border-14 {
 .u-separator-15:after,
 .u-text.u-border-15,
 a.u-button-style.u-border-15 {
-  border-width: 15px;
+  border-width: 0px;
 }
 .u-shape-svg.u-border-15 {
   stroke-width: 15px;
@@ -38075,9 +38076,7 @@ a.u-link.u-text-hover-grey-90:hover {
   height: 100%;
 }
 
-.u-header .u-menu-1 {
-  margin: -46px auto 0 0;
-}
+
 
 .u-header .u-nav-1 {
   font-size: 1rem;
@@ -38091,7 +38090,7 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-header .u-image-2 {
   width: 376px;
   height: 34px;
-  margin: -35px auto 29px calc(((100% - 1140px) / 2) + 382px);
+  /*margin: -35px auto 29px calc(((100% - 1140px) / 2) + 382px);*/
 }
 @media (max-width: 1199px) {
   .u-header .u-image-1 {
@@ -38099,16 +38098,13 @@ a.u-link.u-text-hover-grey-90:hover {
     width: 35px;
   }
 
-  .u-header .u-menu-1 {
-    width: auto;
-    margin-top: -46px;
-  }
+  
 
   .u-header .u-image-2 {
     width: 376px;
     height: 34px;
     margin-top: -35px;
-    margin-left: calc(((100% - 940px) / 2) + 382px);
+    /*margin-left: calc(((100% - 940px) / 2) + 382px);*/
   }
 }
 @media (max-width: 991px) {
@@ -38117,7 +38113,7 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-header .u-image-2 {
-    margin-left: calc(((100% - 720px) / 2) + 344px);
+   /* margin-left: calc(((100% - 720px) / 2) + 344px);*/
   }
 }
 @media (max-width: 767px) {
@@ -38126,7 +38122,7 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-header .u-image-2 {
-    margin-left: calc(((100% - 540px) / 2) + 164px);
+    /*margin-left: calc(((100% - 540px) / 2) + 164px);*/
   }
 }
 @media (max-width: 575px) {
@@ -38141,7 +38137,7 @@ a.u-link.u-text-hover-grey-90:hover {
   .u-header .u-image-2 {
     width: 340px;
     height: 31px;
-    margin-left: calc(((100% - 340px) / 2));
+   /* margin-left: calc(((100% - 340px) / 2));*/
   }
 }
  .u-footer {
