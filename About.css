@@ -43,7 +43,13 @@
 
 .u-section-2 .u-image-1 {
   min-height: 400px;
-  background-image: url("images/_MG_1922.JPG");
+  background-image: url("images/Compromiso-Familiar-con-la-Mejor-Fruta-de-Exportación.jpg");
+  background-position: 50% 50%;
+}
+
+.u-section-2 .u-image-1-2 {
+  min-height: 400px;
+  background-image: url("images/pitahaya-plato.jpg");
   background-position: 50% 50%;
 }
 
@@ -132,7 +138,7 @@
     min-height: 179px;
   }
 } .u-section-3 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("images/e119cb01-86ce-401d-aebf-fad6efe2a3cf.JPG");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.20)), url("images/Compromiso.jpg");
   background-position: 50% 50%;
 }
 .image-3d{
@@ -607,6 +613,7 @@
     height: 80px;
   }
 } .u-section-7 {
+  margin-top: 30%;
   background-image: none;
 }
 
@@ -693,5 +700,131 @@
 
   .u-section-7 .u-form-1 {
     width: 340px;
+  }
+
+  /*Sección 7*/
+
+
+.u-section-7 {
+
+  margin-top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alineación superior */
+    background-color: #f4f4f4;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Left Cell Styles */
+.u-layout-cell-1 {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Right Cell (Form) Styles */
+.u-sheet-1 {
+    flex: 2; /* Darle el doble de espacio que al lado izquierdo */
+    padding: 20px;
+}
+
+/* Form Styles */
+.u-form-1 {
+    width: 100%;
+}
+
+.u-form-group {
+    margin-bottom: 20px;
+}
+
+.u-form-group.u-form-submit {
+    margin-top: 20px;
+}
+
+/* Asegurarse de que todo esté centrado */
+.u-align-center {
+    text-align: center;
+}
+
+.u-align-left {
+    text-align: left;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .u-section-7 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .u-layout-cell-1, .u-sheet-1 {
+        width: 80%;
+        padding: 10px;
+    }
+}
+}
+
+/*Contenedor de imagen y video */
+.mediaSection {
+  font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin: 0;
+    
+}
+
+
+.media-section {
+  
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.media-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap; /* Para permitir que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.media-item {
+  flex: 1;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  height: 300px; /* Establece una altura uniforme */
+}
+
+.media-item img,
+.media-item iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que las imágenes y videos se escalen correctamente sin distorsión */
+  border-radius: 8px;
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .media-container {
+      flex-direction: column; /* Alinea los elementos en columna para pantallas pequeñas */
+  }
+
+  .media-item {
+      height: auto; /* Permite que los elementos ajusten su altura según el contenido */
+      margin-bottom: 20px;
+  }
+
+  .media-item img,
+  .media-item iframe {
+      width: 350px;
+      height: 250px; /* Ajusta la altura automáticamente en pantallas pequeñas */
+      object-fit: contain; /* Evita recortar demasiado el contenido en pantallas pequeñas */
   }
 }
