@@ -1,28 +1,70 @@
 $(document).ready(function() {
-    // Verificar el idioma en localStorage
     var language = localStorage.getItem("language");
-
+  
+    // Asegura que la clase se aplique correctamente según el idioma almacenado
     if (language === "en") {
-        $(".wrap").addClass("english"); // Aplica la clase para la bandera del Reino Unido
+      $(".wrap").addClass("english");
     } else {
-        $(".wrap").removeClass("english"); // Remueve la clase que aplica la bandera del Reino Unido
+      $(".wrap").removeClass("english");
     }
+  
+    // Manejo del clic para cambiar de idioma
+    $(".wrap").on("click", function() {
+      if ($(this).hasClass("english")) {
+        $(this).removeClass("english");
+        localStorage.setItem("language", "es");
+      } else {
+        $(this).addClass("english");
+        localStorage.setItem("language", "en");
+      }
+      changePageLanguage();
+    });
+    
+    function changePageLanguage() {
+      var currentPage = window.location.pathname.split("/").pop();
+      var isEnglish = $(".wrap").hasClass("english");
+  
+      var pageMap = {
+        "index.html": "indexEs.html",
+        "about.html": "AboutEs.html",
+        "Contact.html": "ContactEs.html",
+        "indexEs.html": "index.html",
+        "AboutEs.html": "about.html",
+        "ContactEs.html": "contact.html"
+      };
+  
+      if (pageMap[currentPage]) {
+        window.location.href = pageMap[currentPage];
+      }
+    }
+  });
+  
 
-    $(".wrap").on("click", function(e) {
-        if ($(this).hasClass("english")) {
-            // Cambiar a español
-            $(this).removeClass("english");
-            localStorage.setItem("language", "es");
-            setTimeout(function() {
-                window.location.href = "index.html"; // Redirige a la página en español
-            }, 500); // Retraso de 500 ms antes de redirigir
+
+// scripts.js
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevenir la redirección por defecto
+
+    var formData = new FormData(this);
+
+    fetch(this.action, {
+        method: this.method,
+        body: formData,
+    })
+    .then(function(response) {
+        return response.json(); // Convertir la respuesta a JSON
+    })
+    .then(function(data) {
+        if (data.success) { // Si el servidor responde con { "success": true }
+            document.querySelector(".u-form-send-success").style.display = "block";
+            document.querySelector(".u-form-send-error").style.display = "none";
         } else {
-            // Cambiar a inglés
-            $(this).addClass("english");
-            localStorage.setItem("language", "en");
-            setTimeout(function() {
-                window.location.href = "indexEs.html"; // Redirige a la página en inglés
-            }, 500); // Retraso de 500 ms antes de redirigir
+            document.querySelector(".u-form-send-success").style.display = "none";
+            document.querySelector(".u-form-send-error").style.display = "block";
         }
+    })
+    .catch(function(error) {
+        document.querySelector(".u-form-send-success").style.display = "none";
+        document.querySelector(".u-form-send-error").style.display = "block";
     });
 });
