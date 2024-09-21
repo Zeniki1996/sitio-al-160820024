@@ -4,6 +4,28 @@
  * License https://froala.com/wysiwyg-editor/terms/
  * Copyright 2014-2021 Froala Labs
  */
+ html {
+  font-family: Marcellus;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+ .u-countdown-number .counter-html {
+  position: absolute;
+  width: 1ch;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+
  header{
   position: relative;
   display: flex;
@@ -257,135 +279,6 @@ body,
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.0);
 }
 /*Fin Redes sociales*/
-
-/*Sección de Contactos*/
-.Contactos {
-  font-family: Marcellus, sans-serif;
-  background-color: #f9f9f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  margin: 0;
-}
-
-.contact-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 1250px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact-info {
-  flex: 1;
-  margin-right: 20px;
-}
-
-.contact-info h2 {
-  color: #333;
-  margin-bottom: 10px;
-  font-size: 25px;
-}
-
-.contact-info p {
-  color: #666;
-  margin-bottom: 20px;
-  font-size: 15px;
-}
-
-.contact-info h3 {
-  color: #333;
-  margin-bottom: 10px;
-  font-size: 25px;
-}
-
-.contact-info img {
-  max-width: 150px;
-  border-radius: 8px;
-  margin-top: 10px;
-  width:20%;
-}
-
-.contact-form {
-  flex: 1;
-}
-
-.contact-form h2 {
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-.btn-submit {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #344E41;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 15px;
-}
-
-.btn-submit:hover {
-  background-color: #2C4239;
-}
-
-.form-send-success,
-.form-send-error {
-  margin-top: 15px;
-  padding: 10px;
-  border-radius: 4px;
-  font-size: 13px;
-}
-
-.form-send-success {
-  color: #155724;
-  background-color: #d4edda;
-  border: 1px solid #c3e6cb;
-}
-
-.form-send-error {
-  color: #721c24;
-  background-color: #f8d7da;
-  border: 1px solid #f5c6cb;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .contact-section {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .contact-info, .contact-form {
-      margin-right: 0;
-      margin-bottom: 20px;
-      width: 100%;
-  }
-}
-/*Fin Sección de Contactos*/
 
 .fr-clearfix::after {
   clear: both;
@@ -753,11 +646,7 @@ span.fr-img-caption.fr-view {
   pointer-events: none!important;
 }
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
-html {
-  font-family: Marcellus;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
+
 
 article,
 aside,
@@ -871,12 +760,7 @@ button,
 select {
   text-transform: none;
 }
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
+
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -2442,11 +2326,7 @@ a {
 *:after {
   box-sizing: border-box;
 }
-html {
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
+
 
 section > *,
 header > *,
@@ -16587,9 +16467,6 @@ div.u-video,
 .u-flip-horizontal.u-flip-vertical.u-rotate-270 {
   transform: scaleX(-1) scaleY(-1) rotate(270deg) translate(0, -100%);
 }
-html {
-  font-size: 16px;
-}
 
 .u-body h1,
 .u-body h2,
@@ -20581,10 +20458,7 @@ section.u-dialog-block:not(.u-dialog-open) {
   overflow: hidden;
   width: 1ch;
 }
-.u-countdown-number .counter-html {
-  position: absolute;
-  width: 1ch;
-}
+
 .u-countdown-counter {
   display: flex;
   white-space: nowrap;
@@ -38478,7 +38352,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
  /*begin-variables base-font-size*/ 
- html { font-size: 16px; }
+
  /*end-variables base-font-size*/
 
 
