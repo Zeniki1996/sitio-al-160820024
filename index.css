@@ -17,61 +17,68 @@
 }
 
 /*Sección 2, 3 y 4*/
+.u-section-2{
+	padding:0% 7% 0% 7%;
+}.u-section-2-1{
+	padding:0% 7% 0% 7%;
+  background:#f4f1ec;
+}
 .u-section-2-1{
   background:#f4f1ec;
 }
-
-.u-section-2 .u-sheet-1, u-section-2-1.u-sheet-1 {
-  min-height: 548px;
-}
-
 .u-section-2 .u-layout-wrap-1,.u-section-2-1.u-layout-wrap-1 {
   margin-top: 3px;
   margin-bottom: 3px;
 }
-
 .u-section-2 .u-layout-cell-1,.u-section-2-1 .u-layout-cell-1 {
-  min-height: 498px;
-}
-
-.u-section-2 .u-container-layout-1 , .u-section-2-1 .u-container-layout-1 {
-  padding: 30px 25px;
+  min-height: 480px;
 }
 
 .u-section-2 .u-text-1 {
   vertical-align: middle;
-  font-family: Marcellus;
+  font-family: "Libre Baskerville", serif;
+	font-size:2.9rem;
   margin:auto;
+  color: #f4f1ec;
 }
-
-.u-section-2 .u-text-1 {
+.u-section-2 .u-text-2 {
+  background-image: none;
+	font-family: Marcellus;
+	font-size:1.1rem;
+  padding: 4% 1% 4% 1%;
   color: #f4f1ec;
 }
 .u-section-2-1 .u-text-1 {
   margin-left:12%;
+	font-family: "Libre Baskerville", serif;
+	text-align:left;
+	font-size:2.9rem;
 }
 
-.u-section-2 .u-text-2 {
-  background-image: none;
-  padding: 3%;
-  color: #f4f1ec;
-}
 .u-section-2-1 .u-text-2 {
   background-image: none;
   padding: 3% 10% 3% 12%;
+	font-family: Marcellus;
+	font-size:1.1rem;
   color: #201c16;
 	text-align:left;
 }
-.u-section-2 .u-text-3 {
+
+.u-section-2 .u-text-4 {/*titulo*/
+  color: #f4f1ec;
+	font-family: "Libre Baskerville", serif;
+	font-size:2.9rem;
+	text-align:left;
+	margin-left:18%;
+}
+.u-section-2 .u-text-3 {/*Parrafo*/
   background-image: none;
   padding: 3%;
+	font-family: Marcellus;
+	font-size:1.1rem;
   color: #f4f1ec;
   text-align: left;
 	margin-left:15%;
-}
-.u-section-2 .u-text-4 {
-  color: #f4f1ec;
-	margin-left:18%;
 }
 
 .u-section-2 .u-btn-1, .u-section-2-1 .u-btn-1 {
@@ -92,7 +99,7 @@
 
 .u-section-2 .u-image-1 {
   background-image: url("images/dragonfruit.png");
-  background-size: 70%;
+  background-size: 65%;
 }
 .u-section-2-1 .u-image-10 {
   min-height: 431px;
@@ -184,110 +191,57 @@
 /*Sección 5 las certificaciones */
 
 .u-section-5 {
-  background-image: linear-gradient(0deg, rgba(0,0,1,0.8), rgba(0,0,0,0.3)), url("images/plantasdepitahaya-04.png");
+  background-image: linear-gradient(0deg, rgba(0,0,1,0.8), rgba(0,0,0,0.3)), url("images/PitaMision.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
-
-.u-section-5 .u-sheet-1 {
-  min-height: 786px;
-}
-
 .u-section-5 .u-text-1 {
-  font-family: Marcellus;
-  margin: 65px auto 0 46px;
+  font-family: "Libre Baskerville", serif;
+	font-size:3.5rem;
+	text-align:left;
+	margin:5% 0% 0% 5%;
 }
 
 .u-section-5 .u-list-1 {
   grid-template-rows: auto;
-	padding:4%;
+	padding:5%;
 }
 
 .u-section-5 .u-repeater-1 {
-  grid-template-columns: calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px);
-  grid-gap: 10px 10px;
-  min-height: 447px;
+  min-height: 440px;
+  justify-content:center;
+  align-items: end;
 }
 
-
-.u-section-5 .u-container-layout-1 {
-  padding: 30px 24px;
-}
-
-.u-section-5 .u-icon-1 {
-  height: 54px;
-  width: 133px;
-  margin: 0 auto;
-  padding: 0;
-}
 .u-section-5 .u-container-layout-text {
 	font-family: Marcellus;
   background:#efede7;
 	border-radius: 20px;
 	color:black;
-	min-height:70%;
-	font-size: 0.8rem;
 }
-.u-section-5 .u-container-layout-1  {
+.u-section-5 .u-container-layout-1,.u-section-5 .u-container-layout-2,.u-section-5 .u-container-layout-3  {
   padding: 5%;
 }
 
-.u-section-5 .u-icon-1 {
+.u-section-5 .u-icon-1,.u-section-5 .u-icon-2,.u-section-5 .u-icon-3  {
   height: 54px;
   width: 133px;
   margin: 0 auto;
   padding: 0;
 }
 
-.u-section-5 .u-text-3 {
-  font-family: Marcellus;
-	padding:4%;
+.u-section-5 .u-text-3, .u-section-5 .u-text-5,.u-section-5 .u-text-7 {
+  font-family: "Libre Baskerville", serif;
+	font-size:1.3rem;
+	padding:12% 0% 0% 0%;
 }
 
-.u-section-5 .u-text-4 {
-  margin:3% 3% 20% 3% ;
+.u-section-5 .u-text-4, .u-section-5 .u-text-6,.u-section-5 .u-text-8 {
+	font-family: Marcellus;
+	padding:6% 6% 10% 6%;
 }
 
-.u-section-5 .u-container-layout-2 {
-  padding: 5%;
-}
-
-.u-section-5 .u-icon-2 {
-  height: 54px;
-  width: 133px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.u-section-5 .u-text-5 {
-  font-family: Marcellus;
-	padding:4%;
-}
-
-.u-section-5 .u-text-6 {
-   margin:3% 3% 20% 3% ;
-}
-
-.u-section-5 .u-container-layout-3 {
-  padding: 5%;
-}
-
-.u-section-5 .u-icon-3 {
-  height: 54px;
-  width: 133px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.u-section-5 .u-text-7 {
-  font-family: Marcellus;
-	padding:4%;
-}
-
-.u-section-5 .u-text-8 {
-   margin:3% 3% 20% 3% ;
-}
-
+ 
 @media (max-width: 1199px) {
   .u-section-5 .u-sheet-1 {
     min-height: 648px;

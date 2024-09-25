@@ -1,5 +1,5 @@
 
-/*PArte del formulario de contactos */
+/*Parte del formulario de contactos */
 
 /* Contenedor principal del formulario */
 .form-container {
@@ -8,7 +8,8 @@
   align-items: flex-start;  /* Ajuste al color de fondo */
   padding: 5%;
   color: #fff;
-  font-family: Marcellus;
+  font-family: "Libre Baskerville", serif;
+  padding:5% 10% 0% 10%;
 }
 
 /* Estilos para la sección de contacto */
@@ -24,6 +25,7 @@
 }
 
 .contact-details p {
+  font-family: Marcellus;
   margin: 10px 0;
   line-height: 1.2;
 }
@@ -34,6 +36,7 @@
 }
 
 .form-section h3 {
+  font-family: "Libre Baskerville", serif;
   font-size: 28px;
   margin-bottom: 20px;
 }
@@ -50,6 +53,7 @@
   background:none; /* Fondo similar al tema */
   color: white;
   font-size: 16px;
+  font-family: "Libre Baskerville", serif;
 }
 
 .form-section input[type="text"]::placeholder,
@@ -109,8 +113,7 @@
 /* Sección del Mapa */
 .map-section {
   margin-top: 50px; /* Espacio entre la sección de contacto y el mapa */
-  padding: 20px;
-  background-color: #0c3621; /* Color de fondo acorde con el tema */
+  padding: 20px;/* Color de fondo acorde con el tema */
   text-align: center;
 }
 
