@@ -111,6 +111,11 @@
   background-image: url("images/ImgInglés.png");
   background-size: 85%;
 }
+.u-section-2 .u-image-Español {
+  min-height: 431px;
+  background-image: url("images/Español.png");
+  background-size: 85%;
+}
 
 @media (max-width: 1199px) {
   .u-section-2 .u-sheet-1,.u-section-2-1 .u-sheet-1 {
@@ -174,7 +179,7 @@
     padding-right: 10px;
   }
 	
-.u-section-2 .u-image-11 {
+.u-section-2 .u-image-11, .u-section-2 .u-image-Español {
   background-size: 65%;
 }
 }
@@ -182,7 +187,7 @@
   .u-section-2 .u-image-1, .u-section-2-1 .u-image-10  {
     background-size: 75%;
   }
-	.u-section-2 .u-image-11{
+	.u-section-2 .u-image-11, .u-section-2 .u-image-Español {
 		background-size: 100%;
 	}
 } 
