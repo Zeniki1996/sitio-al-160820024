@@ -1,24 +1,26 @@
 .u-section-1 {
-  position: relative;
+  position: flex;
   width: 100%;  /* Establece el ancho al 100% del contenedor */
-  padding-top: 40%;  /* Establece el padding-top al 60% del ancho, lo que controla la altura */
-  overflow: hidden;
-	  justify-content: space-between;
-  align-items: center;/* Asegura que no se desborde el contenido */
+	max-width:1300px;
+	margin-bottom:-15%;
+  padding-top: 60%;  /* Establece el padding-top al 60% del ancho, lo que controla la altura */
+
 }
 .u-section-1 .embed-responsive-1 {
+  width: 110%;
+  height: 80%;
+  object-fit:cover ; /* Asegura que las imágenes y videos se escalen correctamente sin distorsión */
+  border-radius: 8px;
   position: absolute;
-  top: 0;
-  left: -20%;
-  width: 140%;
-  height: 140%;
-	  justify-content: space-between;
-  align-items: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*Sección 2, 3 y 4*/
 .u-section-2{
-	padding:0% 7% 0% 7%;
+	padding:5% 7% 0% 7%;
+	
 }.u-section-2-1{
 	padding:0% 7% 0% 7%;
   background:#f4f1ec;
@@ -39,6 +41,7 @@
   font-family: "Libre Baskerville", serif;
 	font-size:2.9rem;
   margin:auto;
+	font-weight: 700;
   color: #f4f1ec;
 }
 .u-section-2 .u-text-2 {
@@ -52,6 +55,7 @@
   margin-left:12%;
 	font-family: "Libre Baskerville", serif;
 	text-align:left;
+	font-weight: 700;
 	font-size:2.9rem;
 }
 
@@ -68,6 +72,7 @@
   color: #f4f1ec;
 	font-family: "Libre Baskerville", serif;
 	font-size:2.9rem;
+	font-weight: 700;
 	text-align:left;
 	margin-left:18%;
 }
@@ -196,7 +201,7 @@
 /*Sección 5 las certificaciones */
 
 .u-section-5 {
-  background-image: linear-gradient(0deg, rgba(0,0,1,0.8), rgba(0,0,0,0.3)), url("images/PitaMision.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,1,0.5), rgba(0,0,0,0.0)), url("images/PitaMision.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -205,6 +210,7 @@
 	font-size:3.5rem;
 	text-align:left;
 	margin:5% 0% 0% 5%;
+	font-weight: 700;
 }
 
 .u-section-5 .u-list-1 {

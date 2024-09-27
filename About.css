@@ -76,15 +76,14 @@
 }
 
 .image-container img {
-  width: 50%; /* Asegura que la imagen sea responsiva */
+  width: 60%; /* Asegura que la imagen sea responsiva */
   height: auto;
   border-radius: 8px; /* Bordes redondeados opcional */
 }
 
 /* Estilos para los títulos y textos */
 .section-nombre .text-container h2 {
-  font-family: Marcellus;
-  
+  font-family: Marcellus;  
 }
 .section-nombre .text-container h3 {
   font-family: "Libre Baskerville";
@@ -125,6 +124,7 @@
   font-size: 3rem; /* Aumenta el tamaño del título */
   margin-bottom: 0.5em; /* Espacio después del título */
   font-family: "Libre Baskerville", serif;
+  font-weight: 700;
 }
 
 .content p {
@@ -151,6 +151,9 @@
 
 .u-section-5 .u-sheet-1 {
   min-height: 552px;
+}
+.u-section-5 h1 {
+  font-weight: 700;
 }
 
 .u-section-5 .u-repeater-1 {
@@ -257,14 +260,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
-    margin: 0;
-    
+    padding: 5%;
 }
 
 
 .media-section {
-  
     width: 100%;
     max-width: 1200px;
     margin: 20px auto;
@@ -287,12 +287,22 @@
   height: 300px; /* Establece una altura uniforme */
 }
 
-.media-item img,
-.media-item iframe {
+
+.media-item img {
   width: 100%;
-  height: 100%;
+  height: 80%;
   object-fit: cover; /* Asegura que las imágenes y videos se escalen correctamente sin distorsión */
   border-radius: 8px;
+}
+.media-item iframe {
+  width: 110%;
+  height: 80%;
+  object-fit:cover ; /* Asegura que las imágenes y videos se escalen correctamente sin distorsión */
+  border-radius: 8px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Estilo responsivo para pantallas pequeñas */

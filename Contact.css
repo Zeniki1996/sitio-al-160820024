@@ -21,7 +21,12 @@
 
 .contact-details h2 {
   font-size: 36px;
+    font-weight: 700;
   margin-bottom: 20px;
+}
+.contact-details h3 {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .contact-details p {
@@ -38,6 +43,7 @@
 .form-section h3 {
   font-family: "Libre Baskerville", serif;
   font-size: 28px;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
