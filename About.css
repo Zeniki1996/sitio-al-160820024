@@ -50,6 +50,10 @@
   .video-container, .text-container {
       width: 100%; /* Los contenedores ocupan todo el ancho en móviles */
   }
+  .night-blooming-section .text-container {
+    width: 95%; /* Ajusta el ancho según necesidades */
+    padding: 3%;
+  }
 }
 /*Sección 2*/
 

@@ -9,7 +9,7 @@
   padding: 5%;
   color: #fff;
   font-family: "Libre Baskerville", serif;
-  padding:5% 10% 0% 10%;
+  padding:5% 20% 0% 20%;
 }
 
 /* Estilos para la sección de contacto */
@@ -47,49 +47,17 @@
   margin-bottom: 20px;
 }
 
-/* Campos del formulario */
-.form-section input[type="text"],
-.form-section input[type="email"],
-.form-section textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  background:none; /* Fondo similar al tema */
-  color: white;
-  font-size: 16px;
-  font-family: "Libre Baskerville", serif;
+/* imagen */
+.imagcont{
+  width:80%;
+  margin-left:20%;
 }
 
-.form-section input[type="text"]::placeholder,
-.form-section input[type="email"]::placeholder,
-.form-section textarea::placeholder {
-  color: #ccc;
-}
 
-.form-section textarea {
-  resize: none;
-  height: 150px; /* Ajuste de altura del textarea */
-}
 
-/* Botón de enviar */
-.form-section button {
-  background-color: #fff;
-  color: #0c3621;
-  border: none;
-  padding: 15px 30px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 18px;
-   font-weight:600;
-  transition: background-color 0.3s ease;
-}
 
-.form-section button:hover {
-  background-color: #ccc;
-  color: #0c3621;
-}
+
+
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
