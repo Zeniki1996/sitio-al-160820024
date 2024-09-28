@@ -86,21 +86,7 @@
 	margin-left:15%;
 }
 
-.u-section-2 .u-btn-1, .u-section-2-1 .u-btn-1 {
-  font-size: 0.875rem;
-  letter-spacing: 1px;
-  background-image: none;
-  border-style: none none solid;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin:auto;
-  padding: 0;
-  display: contents;
-  font-family: Marcellus;
-}
-.u-section-2-1 .u-btn-1 {
-  color: #201c16;
-}
+
 
 .u-section-2 .u-image-1 {
   background-image: url("images/dragonfruit.png");
@@ -132,7 +118,6 @@
   }
   .u-section-2-1 .u-layout-cell-1{
     min-height: 411px;
-    text-align: left;
   }
 
   .u-section-2 .u-text-2, .u-section-2-1 .u-text-2 {
@@ -171,8 +156,6 @@
 
 @media (max-width: 767px) {
   .u-section-2 .u-container-layout-1, .u-section-2-1 .u-container-layout-1 {
-    padding-left: 10px;
-    padding-right: 10px;
   }
 
   .u-section-2 .u-image-1, .u-section-2-1 .u-image-10 {
@@ -194,7 +177,18 @@
   }
 	.u-section-2 .u-image-11, .u-section-2 .u-image-Español {
 		background-size: 100%;
+		margin-top:-15%;
 	}
+	.u-section-2 .u-text-4,.u-section-2-1 .u-text-1,.u-section-2-1 .u-text-2,.u-section-2 .u-text-3 {
+	text-align:left;
+	margin-left:0%;
+}
+	.u-section-2-1{
+	  /* Esto alinea los hijos (textos) verticalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+   
+}
 } 
 
 
@@ -228,6 +222,7 @@
 	font-family: Marcellus;
   background:#efede7;
 	border-radius: 20px;
+	min-height:300px;
 	color:black;
 }
 .u-section-5 .u-container-layout-1,.u-section-5 .u-container-layout-2,.u-section-5 .u-container-layout-3  {
@@ -346,6 +341,9 @@
   .u-section-5 .u-sheet-1 {
     min-height: 234px;
   }
+	.u-section-5 .u-text-1 {
+	font-size:2.5rem;
+	}
 
   .u-section-5 .u-repeater-1 {
     grid-template-columns: 100%;

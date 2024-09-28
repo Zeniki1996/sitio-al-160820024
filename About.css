@@ -156,9 +156,6 @@
 .u-section-5 .u-sheet-1 {
   min-height: 552px;
 }
-.u-section-5 h1 {
-  font-weight: 700;
-}
 
 .u-section-5 .u-repeater-1 {
   grid-template-columns: repeat(3, calc(33.3333% - 6.66667px));
@@ -170,6 +167,7 @@
 }
 .u-section-5 h1 {
   text-align:left;
+  font-weight: 700;
   margin:3%;
   font-family: "Libre Baskerville", serif;
 }
@@ -180,12 +178,11 @@
 
 .u-section-5 .u-text-1,.u-section-5 .u-text-3,.u-section-5 .u-text-5 {
   font-family: "Libre Baskerville", serif;
-  font-size:2.3rem;
+  font-size:1.3rem;
 }
 
 .u-section-5 .u-text-2 {
   font-family: Marcellus;
-  font-size: 0.875rem;
   margin: 5% 0 0;
 }
 
@@ -199,8 +196,7 @@
 }
 
 
-.u-section-5 .u-text-4 {
-  font-size: 0.875rem;
+.u-section-5 .u-text-4,.u-section-5 .u-text-6  {
   margin: 20px 0 0;
 }
 
@@ -214,10 +210,7 @@
 }
 
 
-.u-section-5 .u-text-6 {
-  font-size: 0.875rem;
-  margin: 20px 0 0;
-}
+
 
 @media (max-width: 1199px) {
   .u-section-5 .u-sheet-1 {
