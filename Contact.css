@@ -111,5 +111,8 @@
   .map-container iframe {
       height: 250px; /* Ajusta la altura del mapa para pantallas pequeñas */
   }
+  .imagcont{
+    margin-left:10%;
+  }
 }
 
