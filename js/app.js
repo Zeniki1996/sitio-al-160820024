@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var language = localStorage.getItem("language");
+  var language = localStorage.getItem("language") || "es";
 
   // Asegura que la clase se aplique correctamente según el idioma almacenado
   if (language === "en") {
@@ -33,7 +33,8 @@ $(document).ready(function() {
       "ContactEs.html": "Contact.html"
     };
 
-    if (pageMap[currentPage]) {
+    // Asegura que solo redirige si hay una página equivalente
+    if (pageMap[currentPage] && ((isEnglish && currentPage.includes('Es')) || (!isEnglish && !currentPage.includes('Es')))) {
       window.location.href = pageMap[currentPage];
     }
   }

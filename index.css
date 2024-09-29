@@ -155,9 +155,6 @@
 }
 
 @media (max-width: 767px) {
-  .u-section-2 .u-container-layout-1, .u-section-2-1 .u-container-layout-1 {
-  }
-
   .u-section-2 .u-image-1, .u-section-2-1 .u-image-10 {
     min-height: 408px;
 	  background-size: 45%;
@@ -178,16 +175,20 @@
 	.u-section-2 .u-image-11, .u-section-2 .u-image-Español {
 		background-size: 100%;
 		margin-top:-15%;
+		
 	}
 	.u-section-2 .u-text-4,.u-section-2-1 .u-text-1,.u-section-2-1 .u-text-2,.u-section-2 .u-text-3 {
 	text-align:left;
 	margin-left:0%;
+		padding:0% 5% 10% 5%;	
 }
+	.u-section-2-1 .u-text-1,.u-section-2 .u-text-4 {
+		font-size:2.3rem;		
+	}
 	.u-section-2-1{
 	  /* Esto alinea los hijos (textos) verticalmente */
     justify-content: center; /* Centra el contenido verticalmente */
     align-items: center; /* Centra el contenido horizontalmente */
-   
 }
 } 
 
