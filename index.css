@@ -1,8 +1,10 @@
 .u-section-1 {
   position: flex;
   width: 100%;  /* Establece el ancho al 100% del contenedor */
-	max-width:1300px;
+
 	margin-bottom:-15%;
+  justify-content: center;
+  align-items: center;
   padding-top: 60%;  /* Establece el padding-top al 60% del ancho, lo que controla la altura */
 
 }

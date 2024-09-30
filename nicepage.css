@@ -11,6 +11,9 @@
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  
 }
 
  .u-countdown-number .counter-html {
@@ -47,6 +50,7 @@ body,
   footer {
     position: relative;
   }
+
   .image-1inicio{
 	  position:absolute;
 	  justify-content:left;
