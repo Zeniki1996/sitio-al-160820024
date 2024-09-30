@@ -30,7 +30,9 @@ $(document).ready(function() {
       "Contact.html": "ContactEs.html",
       "indexEs.html": "index.html",
       "AboutEs.html": "About.html",
-      "ContactEs.html": "Contact.html"
+      "ContactEs.html": "Contact.html",
+      "Home.html": "indexEs.html"
+
     };
 
     // Asegura que solo redirige si hay una página equivalente
