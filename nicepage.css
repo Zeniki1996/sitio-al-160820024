@@ -58,7 +58,7 @@ body,
     margin: 0% 0% 0.8% 75%;
   }
 .logoimg{
-  width:80%;
+  width:60%;
   min-width: 100px;
   margin-bottom: 30px;
 }
@@ -38357,6 +38357,7 @@ a.u-link.u-text-hover-grey-90:hover {
 .footer-logo {
     margin-bottom: 10px;
     width: 60%;
+    margin-left: 5%;
 }
 
 .footer-column a, .footer-column p {

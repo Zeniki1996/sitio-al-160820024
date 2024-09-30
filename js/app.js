@@ -41,3 +41,11 @@ $(document).ready(function() {
     }
   }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  var video = document.querySelector('video');
+  if (video) {
+    video.muted = true; // Asegurar que el video está silenciado
+    video.play(); // Intentar reproducir el video manualmente
+  }
+});
